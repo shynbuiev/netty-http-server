@@ -175,7 +175,7 @@ public class HttpServerHandler extends ChannelDuplexHandler {
     //    src_ip, URI, timestamp,  sent_bytes, received_bytes, speed (bytes/sec)
     private static void log16(final StringBuilder buf) {
         buf.append("<TABLE border=\"1\">");
-        buf.append("<caption>Last Requests log</caption><br>");
+        buf.append("<caption>Last Connections log</caption><br>");
         buf.append("<TR align=\"center\"><td>IP</td> <td>URL</td><td>Timestamp</td><td>Sent bytes</td><td>Received bytes</td><td>Speed (bytes/sec)</td></TR><br>");
 
         stats.iterator().forEachRemaining(new Consumer<ConnectionStats>() {
