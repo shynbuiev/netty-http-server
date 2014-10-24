@@ -35,7 +35,7 @@ public class HttpServerHandler extends ChannelDuplexHandler {
     private String remoteHostName;
     private String uri;
 
-    private final int timeout = 1000;
+    private final int timeout = 10000;
 
 //    @Override
 //    public void channelReadComplete(ChannelHandlerContext ctx) {
